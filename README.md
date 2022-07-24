@@ -2,7 +2,7 @@
 
 ![Logo](/libs/docs-ui-vue/public/docs-ui-vue.png)
 
-A collection of [Vue 3](https://vuejs.org) components for documentation projects, built for [Markdoc](https://markdoc.io).
+A collection of [Vue 3](https://vuejs.org) components for documentation projects, built for [Markdoc](https://markdoc.io). Built with Tailwind CSS (it's not a require dependency, all style is available as `css`).
 
 [![docs-ui-vue](https://img.shields.io/npm/v/docs-ui-vue.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/docs-ui-vue)
 [![vue](https://img.shields.io/static/v1?label=Vue&message=v3.x&color=4FC08D&style=flat-square&logo=vue.js&logoColor=ffffff)](https://vuejs.org)
@@ -24,6 +24,17 @@ npm i docs-ui-vue
 ```
 
 You can also use the UMD build from [Unpkg](https://unpkg.com/docs-ui-vue), available as `DocsUiVue` in the global scope.
+
+## Features
+
+- DocsAlert to display explicit messages
+  - Differents colors with `type`: `info`, `success`, `warning`, `error`
+  - `title` option, default is `type`
+  - `anonymous` boolean to display the message without a title
+- DocsFence to show some code
+  - Associated copy button
+  - highlight.js for syntax highlighting
+  - Filename option for better readability (replace language): `ts` => `ts[main.ts]`
 
 ## Usage - Vue 3
 
@@ -89,19 +100,9 @@ pnpm i
 pnpm dev
 ```
 
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
-
 ## API Reference
 
 ### DocsFence
-
-- Associated copy button
-- Optional filename
 
 | Parameter  | Type     | Description                                                    |
 | :--------- | :------- | :------------------------------------------------------------- |
