@@ -27,13 +27,13 @@ You can also use the UMD build from [Unpkg](https://unpkg.com/docs-ui-vue), avai
 
 ## Features
 
-- DocsAlert to display explicit messages
-  - Differents colors with `type`: `info`, `success`, `warning`, `error`
+- **DocsAlert** to display explicit messages
+  - `type` for differents colors: `info`, `success`, `warning`, `error` with icons
   - `title` option, default is `type`
-  - `anonymous` boolean to display the message without a title
-- DocsFence to show some code
+  - `anonymous` boolean to display the message without a title or icon
+- **DocsFence** to show some code
   - Associated copy button
-  - highlight.js for syntax highlighting
+  - `highlight.js` for syntax highlighting
   - Filename option for better readability (replace language): `ts` => `ts[main.ts]`
 
 ## Usage - Vue 3
