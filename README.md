@@ -1,7 +1,13 @@
 # Docs Vue Library
 
 [![docs-ui-vue](https://img.shields.io/npm/v/docs-ui-vue.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/docs-ui-vue)
-[![tests](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml)
+<!-- [![tests](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml) -->
+
+[![vue](https://img.shields.io/static/v1?label=Vue&message=v3.x&color=4FC08D&style=flat-square&logo=vue.js&logoColor=ffffff)](https://vuejs.org)
+
+📀 [**bookshelves-project**](https://gitlab.com/bookshelves-project) : Bookshelves repository  
+💻 [**bookshelves.ink**](https://bookshelves.ink): demo  
+📚 [**documentation.bookshelves.ink**](https://bookshelves-documentation.netlify.app): documentation, if this link not work, you can check doc on [this repository](https://gitlab.com/bookshelves-project/bookshelves-doc)  
 
 A collection of [Vue 3](https://vuejs.org) components for documentation projects, built for [Markdoc](https://markdoc.io).
 
@@ -63,6 +69,20 @@ Use the UMD build from [Unpkg](https://unpkg.com/docs-ui-vue), available as `Doc
 ## Usage
 
 Usage instructions here.
+
+## Contributing
+
+[![node](https://img.shields.io/static/v1?label=Node&message=v14.18&color=339933&style=flat-square&logo=node.js&logoColor=ffffff)](https://nodejs.org/en)
+[![pnpm](https://img.shields.io/static/v1?label=pnpm&message=v7.x&color=F69220&style=flat-square&logo=pnpm&logoColor=ffffff)](https://pnpm.io)
+
+```bash
+git clone git@github.com:ewilan-riviere/docs-ui-vue.git
+cd docs-ui-vue
+pnpm i
+pnpm dev
+```
+
+Fork repository to make [pull requests](https://github.com/ewilan-riviere/docs-ui-vue/pulls).
 
 ## License
 
