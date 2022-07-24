@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply w-1 h-1 bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-500 hover:bg-gray-500 dark:hover:bg-gray-400 rounded-md;
+}
+
+.prose a {
+  @apply text-primary-500 transition-colors duration-100 hover:text-primary-400 font-semibold !important;
+  @apply dark:text-primary-400 dark:hover:text-primary-500 !important;
+  @apply no-underline shadow-[inset_0_-2px_0_0_var(--tw-prose-background,#fff),inset_0_calc(-1*(var(--tw-prose-underline-size,4px)+2px))_0_0_var(--tw-prose-underline,theme(colors.sky.300))] hover:[--tw-prose-underline-size:6px] dark:[--tw-prose-background:theme(colors.slate.900)] dark:shadow-[inset_0_calc(-1*var(--tw-prose-underline-size,2px))_0_0_var(--tw-prose-underline,theme(colors.sky.800))] dark:hover:[--tw-prose-underline-size:6px] !important;
+}
+
+.prose ol {
+  @apply list-decimal list-inside !important;
+}
+
+.prose ul {
+  @apply list-disc list-inside !important;
+}
+
+.prose img {
+  @apply rounded-md !important;
+}

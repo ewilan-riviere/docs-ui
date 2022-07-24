@@ -1,0 +1,21 @@
+{
+  "engines": {
+    "node": ">=14.18",
+    "pnpm": ">=7.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "build": "pnpm run --parallel build",
+    "lint": "pnpm run --parallel lint",
+    "release": "pnpm run --parallel release",
+    "clean": "rimraf -rf node_modules && pnpm i"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.30.7",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "eslint": "^8.20.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  }
+}
