@@ -1,15 +1,19 @@
-# Docs Vue Library
+# docs-ui-vue
+
+![Logo](/libs/docs-ui-vue/public/docs-ui-vue.png)
+
+A collection of [Vue 3](https://vuejs.org) components for documentation projects, built for [Markdoc](https://markdoc.io).
 
 [![docs-ui-vue](https://img.shields.io/npm/v/docs-ui-vue.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/docs-ui-vue)
-<!-- [![tests](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml) -->
 [![vue](https://img.shields.io/static/v1?label=Vue&message=v3.x&color=4FC08D&style=flat-square&logo=vue.js&logoColor=ffffff)](https://vuejs.org)
+<!-- [![tests](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml) -->
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://gitlab.com/ewilan-riviere/docs-ui-vue/-/blob/main/LICENSE)
 
-📀 [**docs-ui-vue**](https://gitlab.com/ewilan-riviere/docs-ui-vue): repository  
-
-> A collection of [Vue 3](https://vuejs.org) components for documentation projects, built for [Markdoc](https://markdoc.io).  
 > Experimental package, use with caution. Only Vue 3.x is supported.
 
-## Install as package
+## Installation (package)
+
+Install with your favorite package manager.
 
 ```bash
 pnpm add docs-ui-vue
@@ -19,7 +23,9 @@ pnpm add docs-ui-vue
 npm i docs-ui-vue
 ```
 
-### Globally
+You can also use the UMD build from [Unpkg](https://unpkg.com/docs-ui-vue), available as `DocsUiVue` in the global scope.
+
+## Usage - Vue 3
 
 Import and register the module as a plugin in `src/main.ts`.
 
@@ -36,7 +42,7 @@ app
   .mount('#app')
 ```
 
-### Per-component
+### Alternative: per-component
 
 Into `src/**/your-component.vue`
 
@@ -44,32 +50,37 @@ Into `src/**/your-component.vue`
 <script setup lang="ts">
 import { DocsFence } from 'docs-ui-vue'
 import 'docs-ui-vue/dist/style.css'
+
+const code = `const app = createApp(App)
+
+app
+  .use(DocsUiVue)
+  .mount('#app')`
 </script>
 
 <template>
   <div>
-    <docs-fence />
+    <docs-fence language="ts[main.ts]">
+      {{ code }}
+    </docs-fence>
   </div>
 </template>
 ```
 
-## Install as UMD
+## Roadmap
 
-Use the UMD build from [Unpkg](https://unpkg.com/docs-ui-vue), available as `DocsUiVue` in the global scope.
-
-```html
-<script src="/vendor/vue.js" />
-<script src="https://unpkg.com/docs-ui-vue" />
-```
-
-## Usage
-
-Usage instructions here.
+- [ ] Add more components
+- [ ] Add tests
+- [ ] Add documentation
+- [ ] Nuxt 3 support
 
 ## Contributing
 
 [![node](https://img.shields.io/static/v1?label=Node&message=v14.18&color=339933&style=flat-square&logo=node.js&logoColor=ffffff)](https://nodejs.org/en)
 [![pnpm](https://img.shields.io/static/v1?label=pnpm&message=v7.x&color=F69220&style=flat-square&logo=pnpm&logoColor=ffffff)](https://pnpm.io)
+
+Contributions are always welcome!
+Fork repository to make [pull requests](https://github.com/ewilan-riviere/docs-ui-vue/pulls).
 
 ```bash
 git clone git@github.com:ewilan-riviere/docs-ui-vue.git
@@ -78,11 +89,33 @@ pnpm i
 pnpm dev
 ```
 
-Fork repository to make [pull requests](https://github.com/ewilan-riviere/docs-ui-vue/pulls).
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+## API Reference
+
+### DocsFence
+
+- Associated copy button
+- Optional filename
+
+| Parameter  | Type     | Description                                                    |
+| :--------- | :------- | :------------------------------------------------------------- |
+| `language` | `string` | Can be just language, like `ts` or with filename `ts[main.ts]` |
+
+## Related
+
+Here are some related projects
+
+[Markdoc](https://markdoc.io)
 
 ## License
 
-MIT © [Ewilan Rivière](https://github.com/ewilan-riviere)
+[MIT](https://gitlab.com/ewilan-riviere/docs-ui-vue/-/blob/main/LICENSE)
 
 ## Credits
 
@@ -90,11 +123,3 @@ MIT © [Ewilan Rivière](https://github.com/ewilan-riviere)
 - [Tailwind CSS](https://tailwindcss.com) and [Tailwind UI](https://tailwindui.com) for design
 - [Markdoc](https://markdoc.io) for markdown framework
 - [Docus](https://docus.com) for components design
-
-## Guides
-
-### Render functions
-
-- [vuejs.org/api/render-function.html](https://vuejs.org/api/render-function.html)
-- [vuejs.org/guide/extras/render-function.html#rendering-slots](https://vuejs.org/guide/extras/render-function.html#rendering-slots)
-- [sambitsahoo.com/blog/introduction-to-render-functions-in-vue-3.html](https://sambitsahoo.com/blog/introduction-to-render-functions-in-vue-3.html)
