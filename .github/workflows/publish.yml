@@ -6,6 +6,21 @@ on:
       - main
 
 jobs:
+  pre-release:
+    name: pre-release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Tag
+        id: create_tag
+        uses: jaywcjlove/create-tag-action@main
+        with:
+          package-path: ./libs/docs-ui-vue/package.json
+      - name: Create GitHub release
+        uses: Roang-zero1/github-create-release-action@v2
+        with:
+          version_regex: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   release:
     name: 🚀 publish
     runs-on: ubuntu-latest
@@ -26,11 +41,6 @@ jobs:
           cache: pnpm
       - run: pnpm install
       - run: pnpm build
-      - name: Create Tag
-        id: create_tag
-        uses: jaywcjlove/create-tag-action@main
-        with:
-          package-path: ./libs/docs-ui-vue/package.json
       - name: Publish package on NPM 📦
         run: npm publish ./libs/docs-ui-vue --access public
         env:
