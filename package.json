@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "pnpm run --parallel dev",
     "build": "pnpm recursive run build",
+    "storybook": "pnpm recursive run storybook",
     "prepare": "husky install"
   },
   "license": "MIT",
