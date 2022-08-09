@@ -32,7 +32,7 @@ importers:
 
   apps/vue-ts:
     specifiers:
-      '@ewilan-riviere/docs-ui-vue': workspace:^0.0.1
+      '@ewilan-riviere/docs-ui-vue': ^0.0.1
       '@vitejs/plugin-vue': ^3.0.0
       typescript: ^4.6.4
       vite: ^3.0.0
