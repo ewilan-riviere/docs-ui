@@ -1,8 +1,5 @@
 {
   "name": "@ewilan-riviere/docs-ui-vue",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/ewilan-riviere"
-  },
   "version": "0.0.1",
   "description": "A simple template for a custom Vue component library",
   "scripts": {
