@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MyButton } from 'docs-ui-vue'
+import { MyButton } from '@ewilan-riviere/docs-ui-vue'
 </script>
 
 <template>

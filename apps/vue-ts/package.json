@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.2.37",
-    "docs-ui-vue": "workspace:^0.0.1"
+    "@ewilan-riviere/docs-ui-vue": "workspace:^0.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",
