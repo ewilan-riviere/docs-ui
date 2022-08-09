@@ -19,6 +19,6 @@ jobs:
           cache: pnpm
       - name: 🚀 publish
         uses: JS-DevTools/npm-publish@v1
-        package_path: libs/docs-ui-vue
+        package: ./libs/docs-ui-vue/package.json
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
