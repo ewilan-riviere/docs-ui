@@ -2,7 +2,7 @@
 
 A collection of [Vue 3](https://vuejs.org) components for documentation projects, built for [Markdoc](https://markdoc.io). Built with Tailwind CSS (it's not a require dependency, all style is available as `css`).
 
-[![docs-ui-vue](https://img.shields.io/npm/v/docs-ui-vue.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/@ewilan-riviere/docs-ui-vue)
+[![docs-ui-vue](https://img.shields.io/npm/v/@ewilan-riviere/docs-ui-vue.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/@ewilan-riviere/docs-ui-vue)
 [![vue](https://img.shields.io/static/v1?label=Vue&message=v3.x&color=4FC08D&style=flat-square&logo=vue.js&logoColor=ffffff)](https://vuejs.org)
 <!-- [![tests](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/ewilan-riviere/docs-ui-vue/actions/workflows/test.yml) -->
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://gitlab.com/ewilan-riviere/docs-ui-vue/-/blob/main/LICENSE)

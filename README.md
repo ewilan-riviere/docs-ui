@@ -4,7 +4,7 @@
 
 ## Versions
 
-- [Vue 3](https://github.com/ewilan-riviere/docs-ui/tree/main/libs/docs-ui-vue)
+[![docs-ui-vue](https://img.shields.io/npm/v/@ewilan-riviere/docs-ui-vue.svg?style=flat-square&color=4FC08D&logo=vue.js&logoColor=ffffff&label=docs-ui-vue)](https://www.npmjs.com/package/@ewilan-riviere/docs-ui-vue)
 
 ## Publish
 

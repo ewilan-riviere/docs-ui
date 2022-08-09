@@ -29,6 +29,14 @@ export default defineConfig({
           vue: 'Vue',
         },
       },
+      // external: ['react', 'react-dom', 'styled-components'],
+      // output: {
+      //   globals: {
+      //     'react': 'React',
+      //     'react-dom': 'ReactDOM',
+      //     'styled-components': 'styled',
+      //   },
+      // },
     },
   },
 })

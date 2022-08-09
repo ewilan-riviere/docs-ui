@@ -1,7 +1,0 @@
-export { default as DocsAlert } from './alert'
-export { default as DocsBlockquote } from './blockquote'
-export { default as DocsFence } from './fence'
-export { default as DocsList } from './list'
-export { default as DocsMedia } from './media'
-export { default as DocsShow } from './show'
-export { default as DocsToc } from './toc'
