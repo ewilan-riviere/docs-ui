@@ -25,6 +25,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
           cache: pnpm
       - run: pnpm install
+      - run: pnpm build
+      - run: cd libs/docs-ui-vue
       # - name: 🚀 publish
       #   uses: JS-DevTools/npm-publish@v1
       #   with:
