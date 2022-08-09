@@ -2,7 +2,8 @@ name: '🚀 publish'
 
 on:
   push:
-    branch: main
+    branches:
+      - main
 
 jobs:
   release:
@@ -19,6 +20,6 @@ jobs:
           cache: pnpm
       - name: 🚀 publish
         uses: JS-DevTools/npm-publish@v1
-        package: ./libs/docs-ui-vue/package.json
         with:
+          package: ./libs/docs-ui-vue/package.json
           token: ${{ secrets.NPM_AUTH_TOKEN }}
