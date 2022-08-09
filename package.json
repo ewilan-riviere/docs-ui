@@ -1,10 +1,8 @@
 {
-  "name": "@ewilan/ui",
+  "name": "@ewilan-riviere/docs-ui",
   "scripts": {
     "dev": "pnpm run --parallel dev",
     "build": "pnpm recursive run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

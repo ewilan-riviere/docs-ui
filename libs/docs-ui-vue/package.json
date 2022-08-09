@@ -1,6 +1,6 @@
 {
   "name": "@ewilan-riviere/docs-ui-vue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small library of Vue 3 components for documentation projects, built for Markdoc.",
   "keywords": [
     "vue",
@@ -15,12 +15,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ewilan-riviere/docs-ui-vue"
+    "url": "https://github.com/ewilan-riviere/docs-ui"
   },
   "bugs": {
-    "url": "https://github.com/ewilan-riviere/docs-ui-vue/issues"
+    "url": "https://github.com/ewilan-riviere/docs-ui/issues"
   },
-  "homepage": "https://github.com/ewilan-riviere/docs-ui-vue#readme",
+  "homepage": "https://github.com/ewilan-riviere/docs-ui/tree/main/libs/docs-ui-vue",
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build"
