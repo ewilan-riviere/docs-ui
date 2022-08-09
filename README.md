@@ -2,6 +2,13 @@
 
 > Experimental vite plugin
 
+
+## Publish
+
+```bash
+npm version minor
+```
+
 ## Links
 
 - <https://grafikart.fr/tutoriels/monorepo-pnpm-workspace-1969>
