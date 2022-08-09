@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-          cache: "pnpm"
+          cache: pnpm
       - name: 🚀 publish
         - run: npm install
         - run: npm test
