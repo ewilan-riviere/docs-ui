@@ -1,7 +1,10 @@
-# Docs UI Vue
+# Docs UI
 
-> Experimental vite plugin
+> Experimental library for documentation
 
+## Versions
+
+- [Vue 3](https://github.com/ewilan-riviere/docs-ui/tree/main/libs/docs-ui-vue)
 
 ## Publish
 
