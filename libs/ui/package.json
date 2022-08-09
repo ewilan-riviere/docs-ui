@@ -1,5 +1,5 @@
 {
-  "name": "@ewilan-riviere/ui",
+  "name": "docs-ui-react",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/ewilan-riviere"
   },
