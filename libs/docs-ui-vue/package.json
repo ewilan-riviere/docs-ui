@@ -4,7 +4,7 @@
   "description": "A simple template for a custom Vue component library",
   "scripts": {
     "dev": "vite build --watch",
-    "rollup": "vite build"
+    "build": "vite build"
   },
   "author": "Ewilan Rivière",
   "license": "ISC",
