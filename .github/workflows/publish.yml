@@ -16,6 +16,7 @@ jobs:
         with:
           package-path: ./libs/docs-ui-vue/package.json
       - name: Create GitHub release
+        if: always()
         uses: Roang-zero1/github-create-release-action@v2
         with:
           version_regex: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
