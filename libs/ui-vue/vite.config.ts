@@ -18,9 +18,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'MyLib',
+      name: 'DocsUIVue',
       formats: ['es', 'umd'],
-      fileName: format => `my-lib.${format}.js`,
+      fileName: format => `docs-ui-vue.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],

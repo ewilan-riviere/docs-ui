@@ -1,1 +1,8 @@
+export { default as DocsAlert } from './DocsAlert'
+export { default as DocsBlockquote } from './DocsBlockquote'
+export { default as DocsFence } from './DocsFence'
+export { default as DocsList } from './DocsList'
+export { default as DocsMedia } from './DocsMedia'
+export { default as DocsShow } from './DocsShow'
+export { default as DocsToc } from './DocsToc'
 export { default as MyButton } from './MyButton'
