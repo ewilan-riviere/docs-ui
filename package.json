@@ -2,7 +2,11 @@
   "name": "@ewilan-riviere/docs-ui",
   "scripts": {
     "dev": "pnpm run --parallel dev",
-    "build": "pnpm recursive run build"
+    "build": "pnpm recursive run build",
+    "prepare": "husky install"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
 }
