@@ -6,29 +6,29 @@ on:
       - main
 
 jobs:
-  pre-release:
-    name: pre-release
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create Tag
-        id: create_tag
-        uses: jaywcjlove/create-tag-action@main
-        with:
-          package-path: ./libs/docs-ui-vue/package.json
-      - name: Create Release
-        uses: ncipollo/release-action@v1
-        if: steps.create_tag.outputs.successful
-        with:
-          # token: ${{ secrets.GITHUB_TOKEN }}
-          name: ${{ steps.create_tag.outputs.version }}
-          tag: ${{ steps.create_tag.outputs.version }}
-          body: |
-            ```bash
-            npm i @uiw/react-heat-map@${{steps.create_tag.outputs.versionNumber}}
-            ```
+  # pre-release:
+  #   name: pre-release
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Create Tag
+  #       id: create_tag
+  #       uses: jaywcjlove/create-tag-action@main
+  #       with:
+  #         package-path: ./libs/docs-ui-vue/package.json
+  #     - name: Create Release
+  #       uses: ncipollo/release-action@v1
+  #       if: steps.create_tag.outputs.successful
+  #       with:
+  #         # token: ${{ secrets.GITHUB_TOKEN }}
+  #         name: ${{ steps.create_tag.outputs.version }}
+  #         tag: ${{ steps.create_tag.outputs.version }}
+  #         body: |
+  #           ```bash
+  #           npm i @uiw/react-heat-map@${{steps.create_tag.outputs.versionNumber}}
+  #           ```
 
-            ${{ steps.changelog.outputs.compareurl }}
-            ${{ steps.changelog.outputs.changelog }}
+  #           ${{ steps.changelog.outputs.compareurl }}
+  #           ${{ steps.changelog.outputs.changelog }}
   release:
     name: 🚀 publish
     runs-on: ubuntu-latest
@@ -49,6 +49,25 @@ jobs:
           cache: pnpm
       - run: pnpm install
       - run: pnpm build
+      - name: Create Tag
+        id: create_tag
+        uses: jaywcjlove/create-tag-action@main
+        with:
+          package-path: ./libs/docs-ui-vue/package.json
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        if: steps.create_tag.outputs.successful
+        with:
+          # token: ${{ secrets.GITHUB_TOKEN }}
+          name: ${{ steps.create_tag.outputs.version }}
+          tag: ${{ steps.create_tag.outputs.version }}
+          body: |
+            ```bash
+            npm i @uiw/react-heat-map@${{steps.create_tag.outputs.versionNumber}}
+            ```
+
+            ${{ steps.changelog.outputs.compareurl }}
+            ${{ steps.changelog.outputs.changelog }}
       - name: Publish package on NPM 📦
         run: npm publish ./libs/docs-ui-vue --access public
         env:
