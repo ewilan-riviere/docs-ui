@@ -30,7 +30,7 @@ jobs:
         id: create_tag
         uses: jaywcjlove/create-tag-action@main
         with:
-          package-path: ./package.json
+          package-path: ./libs/docs-ui-vue/package.json
       - name: Publish package on NPM 📦
         run: npm publish ./libs/docs-ui-vue --access public
         env:
