@@ -33,6 +33,6 @@ jobs:
       #     package: ./libs/docs-ui-vue/package.json
       #     token: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: Publish package on NPM 📦
-        run: npm publish
+        run: npm publish ./libs/docs-ui-vue/package.json
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
