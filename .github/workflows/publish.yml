@@ -1,0 +1,23 @@
+name: '🚀 publish'
+
+on:
+  push:
+    branch: main
+
+jobs:
+  release:
+    name: 🚀 publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📚 checkout
+        uses: actions/checkout@v3
+      - name: 🟢 node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          registry-url: https://registry.npmjs.org
+      - name: 🚀 publish
+        run: npm publish --access public
+        working-directory: libs/docs-ui-vue
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}

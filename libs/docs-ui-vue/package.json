@@ -1,5 +1,5 @@
 {
-  "name": "docs-ui-vue",
+  "name": "@ewilan-riviere/docs-ui-vue",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/ewilan-riviere"
   },
