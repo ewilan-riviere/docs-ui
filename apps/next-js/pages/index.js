@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Button } from 'docs-ui-react'
+import { MyButton } from 'docs-ui-react-vite'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <Button label="Hey"></Button>
+        <MyButton>Heynextjs</MyButton>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>

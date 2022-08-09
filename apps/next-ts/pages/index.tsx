@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Button } from 'docs-ui-react'
+import { MyButton } from 'docs-ui-react-vite'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           <code className={styles.code}>pages/index.tsx</code>
         </p>
 
-        <Button label="Hey"></Button>
+        <MyButton>Hey</MyButton>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
