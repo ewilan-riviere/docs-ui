@@ -8,19 +8,13 @@
 
 ### Vue 3
 
-[See Vue 3 docs](libs/docs-ui-vue/README.md).
+See [Vue 3 docs](libs/docs-ui-vue/README.md) for `@ewilan-riviere/docs-ui-vue`.
 
 ## Publish
 
 ```bash
 npm version minor
 ```
-
-## Links
-
-- <https://grafikart.fr/tutoriels/monorepo-pnpm-workspace-1969>
-- <https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe>
-- <https://rollupjs.org/guide/en/>
 
 ## Docs
 
