@@ -6,9 +6,7 @@
 
 ## Versions
 
-### Vue 3
-
-See [Vue 3 docs](libs/docs-ui-vue/README.md) for `@ewilan-riviere/docs-ui-vue`.
+- `vue@3.2.x`: [Vue 3 docs](libs/docs-ui-vue/README.md) for `@ewilan-riviere/docs-ui-vue`.
 
 ## Publish
 
