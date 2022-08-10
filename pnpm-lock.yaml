@@ -11,7 +11,7 @@ importers:
   apps/vue-ts:
     specifiers:
       '@antfu/eslint-config': ^0.26.0
-      '@ewilan-riviere/docs-ui-vue': workspace:*
+      '@ewilan-riviere/docs-ui-vue': ^0.0.35
       '@vitejs/plugin-vue': ^3.0.0
       eslint: ^8.21.0
       typescript: ^4.6.4

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.2.37",
-    "@ewilan-riviere/docs-ui-vue": "workspace:*"
+    "@ewilan-riviere/docs-ui-vue": "^0.0.35"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.26.0",
