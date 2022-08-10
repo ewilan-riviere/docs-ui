@@ -12,14 +12,14 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      insertTypesEntry: true,
+      // insertTypesEntry: true,
     }),
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: resolve(__dirname, 'src', 'index.ts'),
       name: 'DocsUIVue',
-      formats: ['es', 'umd'],
+      formats: ['es', 'cjs', 'umd'],
       fileName: format => `docs-ui-vue.${format}.js`,
     },
     rollupOptions: {
@@ -38,5 +38,7 @@ export default defineConfig({
       //   },
       // },
     },
+    // target: 'esnext',
+    // sourcemap: false,
   },
 })
