@@ -7,7 +7,9 @@
     "build:storybook": "pnpm recursive run build-storybook",
     "prepare": "husky install",
     "lint": "pnpm recursive run lint",
-    "lint:fix": "pnpm recursive run lint --fix"
+    "lint:fix": "pnpm recursive run lint:fix",
+    "test": "pnpm recursive run test",
+    "coverage": "pnpm recursive run coverage"
   },
   "license": "MIT",
   "devDependencies": {
