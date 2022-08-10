@@ -1,4 +1,8 @@
 {
+  "[javascript]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar",
     "editor.formatOnSave": false
@@ -12,8 +16,8 @@
     "editor.formatOnSave": true
   },
   "[css]": {
-    // "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   // "prettier.enable": false,
   "editor.codeActionsOnSave": {
@@ -21,6 +25,7 @@
   },
   "eslint.validate": [
     "javascript",
+    "js",
     "html",
     "typescript",
     "vue"

@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "vue": "^3.2.37",
-    "@ewilan-riviere/docs-ui-vue": "workspace:^0.0.3"
+    "@ewilan-riviere/docs-ui-vue": "workspace:*"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.26.0",
     "@vitejs/plugin-vue": "^3.0.0",
+    "eslint": "^8.21.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
     "vue-tsc": "^0.38.4"

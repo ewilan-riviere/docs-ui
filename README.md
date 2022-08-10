@@ -1,14 +1,14 @@
 # Docs UI
 
+[![docs-ui-vue](https://img.shields.io/npm/v/@ewilan-riviere/docs-ui-vue.svg?style=flat-square&color=4FC08D&logo=vue.js&logoColor=ffffff&label=docs-ui-vue)](https://www.npmjs.com/package/@ewilan-riviere/docs-ui-vue)
+
 > Experimental library for documentation
 
 ## Versions
 
-[![docs-ui-vue](https://img.shields.io/npm/v/@ewilan-riviere/docs-ui-vue.svg?style=flat-square&color=4FC08D&logo=vue.js&logoColor=ffffff&label=docs-ui-vue)](https://www.npmjs.com/package/@ewilan-riviere/docs-ui-vue)
+### Vue 3
 
-```bash
-npm i docs-ui-vue
-```
+[See Vue 3 docs](libs/docs-ui-vue/README.md).
 
 ## Publish
 
@@ -26,6 +26,11 @@ npm version minor
 
 - [Rollup](https://github.com/rollup/rollup)
 - [Vite](https://vitejs.dev)
+- [Storybook](https://storybook.js.org/docs)
+  - [vite-vue-ts-storybook](https://github.com/Miguel-Bento-Github/vite-vue-ts-storybook)
+  - [nuxt-storybook-i18n-example](https://github.com/tim-kilian/nuxt-storybook-i18n-example)
+  - [vite-storybook-pnpm-vue](https://github.com/jdk2pq/vite-storybook-pnpm-vue)
+- [gh-pages](https://github.com/tschaub/gh-pages)
 
 ## Credits
 
