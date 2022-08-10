@@ -45,6 +45,6 @@ jobs:
             ${{ steps.changelog.outputs.compareurl }}
             ${{ steps.changelog.outputs.changelog }}
       - name: Publish package on NPM 📦
-        run: npm publish ./libs/docs-ui-vue/dist --access public
+        run: npm publish ./libs/docs-ui-vue --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
