@@ -3,8 +3,8 @@
   "scripts": {
     "dev": "pnpm run --parallel dev",
     "build": "pnpm recursive run build",
-    "storybook": "cd storybook && pnpm run storybook",
-    "build:storybook": "pnpm recursive run build:storybook",
+    "storybook": "cd tools/storybook && pnpm run storybook",
+    "build:storybook": "pnpm recursive run build-storybook",
     "prepare": "husky install",
     "lint": "pnpm recursive run lint",
     "lint:fix": "pnpm recursive run lint --fix"

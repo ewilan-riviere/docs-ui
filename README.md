@@ -34,6 +34,6 @@ npm version minor
 
 ## Credits
 
-- Template [syropian/vue-3-package-skeleton](https://github.com/syropian/vue-3-package-skeleton)
-- Amazing tutorial by [@alexeagleson](https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe)
-- [Grafikart pnpm workspace video](https://grafikart.fr/tutoriels/monorepo-pnpm-workspace-1969)
+- [syropian/vue-3-package-skeleton](https://github.com/syropian/vue-3-package-skeleton) template
+- [@alexeagleson](https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe) amazing tutorial
+- [monorepo pnpm workspace](https://grafikart.fr/tutoriels/monorepo-pnpm-workspace-1969) Grafikart video
