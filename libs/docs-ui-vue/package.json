@@ -1,6 +1,6 @@
 {
   "name": "@ewilan-riviere/docs-ui-vue",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "description": "A small library of Vue 3 components for documentation projects, built for Markdoc.",
   "author": "Ewilan Rivière <ewilan.riviere@gmail.com>",
   "license": "MIT",
