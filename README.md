@@ -26,6 +26,9 @@ npm version minor
 
 ## Credits
 
+- [Tailwind CSS](https://tailwindcss.com) and [Tailwind UI](https://tailwindui.com) for design
+- [Markdoc](https://markdoc.io) for markdown framework
+- [Docus](https://docus.com) for components design
 - [syropian/vue-3-package-skeleton](https://github.com/syropian/vue-3-package-skeleton) template
 - [@alexeagleson](https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe) amazing tutorial
 - [monorepo pnpm workspace](https://grafikart.fr/tutoriels/monorepo-pnpm-workspace-1969) Grafikart video
