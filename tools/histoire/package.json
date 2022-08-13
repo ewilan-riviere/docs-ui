@@ -10,6 +10,9 @@
     "@antfu/eslint-config": "^0.26.1",
     "@histoire/plugin-vue": "^0.10.1",
     "eslint": "^8.21.0",
-    "histoire": "^0.10.1"
+    "histoire": "^0.10.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.7",
+    "vue": "^3.2.37"
   }
 }
